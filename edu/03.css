@@ -1,0 +1,21 @@
+/* 우선순위: 상속 스타일(부모에 스타일적용시) => *(전체적용) => 타입스타일(ex: h1) => 
+            .class style => #id-style => 인라인 스타일(스타일직접적용) => !important */
+#id-style{
+  color: blueviolet;
+}
+
+.cls-style{
+  color: green;
+}
+
+h1{
+  color: red;
+}
+
+/* * {
+  color: skyblue;
+} */
+
+h1{
+  color: black;
+}
