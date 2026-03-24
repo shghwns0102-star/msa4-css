@@ -1,0 +1,54 @@
+.bg-box{
+  background-color: aquamarine;
+  width: 200px;
+  height: 200px;
+
+  padding: 10px;
+  border: 10px dotted #000;
+
+  /* 배경색의 적용 범위를 지정 */
+  background-clip: content-box;
+}
+
+.bg-img{
+  background-image: url("./dog2.jpg"), url("./dog1.jpg");
+  width: 500px;
+  height: 400vh;
+  
+  /* fixed로 설정 시, 스크롤을 이동해도 배경이미지가 고정 */
+  background-attachment: fixed;
+  
+  /* 배경 이미지의 크기를 설정 */
+  /* auto : 원본크기의 사진을 바둑판배열식 */
+  /* contain : 이미지 자동 확대 */
+  /* cover : 사이즈에 맞는 한장의 이미지 제시 */
+
+  background-size: cover;
+
+  /* 배경 이미지의 반복 방법 지정 */
+  /* initial : 기본 */
+  /* repeat : initial 같음 */
+  /* space : 사진 사이 공간 */
+  /* no-repeat : 사진 반복x */
+  background-repeat: no-repeat;
+
+  /* 배경 이미지의 초기 위치를 지정 */
+  background-position: center;
+}
+
+.gradation{
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  /* linear-gradient() : 선형 그라데이션 효과를 부여 */
+  /* background: linear-gradient(#fff, #000); */
+  /* background: linear-gradient(45deg,#fff, #000); */
+  /* background: linear-gradient(#fff,#ed6464 70%,#000); */
+
+  /* radial-gradient() : 원형 그라데이션 효과를 부여(중심점부터 순서대로) */
+  /* background: radial-gradient(#fff, #000); */
+  background: radial-gradient(circle at 20% 0%, #fff, #000, #fff); 
+  /* circle at a% b% <= a는 가로위치 b는 세로위치 */
+
+  
+}
