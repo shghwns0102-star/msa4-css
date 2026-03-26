@@ -1,0 +1,73 @@
+*{ margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+fieldset{
+  padding: 0 10px 10px;
+  border: none;
+}
+
+legend{
+  font-size: 25px;
+  color: purple;
+}
+
+input, textarea{
+  background-color: transparent;
+  outline: none;
+}
+
+input:focus, textarea:focus{
+  border: 3px solid red;  
+}
+
+textarea{
+  width: 200px;
+  height: 150px;
+}
+
+.vertical-align-top{
+  vertical-align: top;
+}
+
+
+.container{
+  background-image: url("./iwantyou.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 420px;
+  margin: auto;
+  border: 2px solid black;
+  margin-top: 20px;
+}
+
+.required-category::before{
+   content: "*"; 
+   color: red; 
+}
+
+input[type="radio"]:checked + label{
+  color: red; 
+}
+
+.button{
+  position: relative;
+}
+
+.button:hover:after{
+   content: "내용을 다시 한 번 확인해 주세요.";
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    left: 50px;
+    top: -5px;
+}
+
+div{
+  margin: 15px;
+}

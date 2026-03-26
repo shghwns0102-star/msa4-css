@@ -1,0 +1,74 @@
+*{ margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+fieldset{
+  margin: auto; 
+  width: 500px; 
+  height: 450px; 
+  position: relative; 
+  border: 5px solid #4d2d2dcb; 
+} 
+label{ 
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 5px;
+} 
+button{
+  width: 50px;
+  position: absolute; 
+  left: 10px; 
+  bottom: 10px; 
+} 
+span{ color: purple; 
+  font-size: 30px; 
+  font-weight: 700; 
+  margin-left: 30px; 
+} 
+.img{ background-image: url("./iwantyou.jpg"); 
+  background-size: cover; 
+} 
+textarea { 
+  vertical-align: top;
+  width: 250px; 
+  height: 200px; 
+} 
+input, textarea {
+   background-color: transparent; 
+  } 
+input[name="name"]:focus, input[name="age"]:focus, textarea[name="요청사항"]:focus{
+   outline: none;
+    border: 3px solid red; 
+} 
+.star::before{
+   content: "*"; 
+   color: red; 
+} 
+input:checked + label{
+   color: red; 
+  } 
+button[name="button"]:hover::after{
+   content: "내용을 다시 한 번 확인해 주세요.";
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    margin-left: 10px;
+}
+input[type="radio"] {
+   margin-left: 3px; 
+  } 
+.form{
+   line-height: 40px; 
+  } 
+label[for="요청사항"]{
+   display: inline-block; vertical-align: top; 
+  } 
+  textarea {
+     display: inline-block; 
+     vertical-align: top; 
+     width: 250px; 
+     height: 200px; 
+  } 

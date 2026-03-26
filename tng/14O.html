@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./14O.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <fieldset>
+        <legend>I want YOU!</legend>
+        <div class="input-box">
+          <label for="name" class="required-category">이름</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+
+        <div class="input-box">
+          <label for="age" class="required-category">나이</label>
+          <input type="number" min="20" name="age" id="age" required>
+        </div>
+
+        <div class="input-box">
+          <span class="required-category">성별</span>
+          <input type="radio" name="gender" id="male">
+          <label for="male">남자</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female">여자</label>
+        </div>
+
+        <div class="input-box">
+          <label for="memo" class="vertical-align-top">요청사항</label>
+          <textarea name="memo" id="memo" placeholder="요청 사항 입력"></textarea>
+        </div>
+
+        <div class="input-box">
+          <button type="submit" class="button">보내기</button>
+        </div>
+
+      </fieldset>
+
+    </form>
+
+  </div>
+  
+</body>
+</html>
