@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 10px;
+}
+
+.container{
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  background-color: gray;
+  width: 500px; 
+  height: 500px;  
+  flex-direction: column;
+  gap : 10px;
+}
+
+.row{
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
+.item{  
+  flex: 1;
+  background-color: aqua;
+  border: 1px solid #000;  
+}
+
+.row2{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+/* .row2 > .item:last-child{
+  flex:2;
+} */
+
+.bg-brown{
+  background-color: brown;
+}
+
+.bg-beige{
+  background-color: beige;
+}
+
+.bg-yellow{
+  background-color: yellow;
+}
+
+.bg-green{
+  background-color: green;
+}
+
+.bg-img{
+  background-image: url(./dog1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
