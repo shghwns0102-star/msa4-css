@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 10px;
+}
+
+.container{
+  display: grid;
+  background-color: gray;
+  gap: 10px;
+  grid-template-columns: repeat(2,1fr);
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  padding: 10px;
+  grid-template-rows: repeat(3,1fr);
+}
+
+.item{
+  background-color: aquamarine;
+  border: 1px solid #000;
+}
+
+.c2{
+  display: grid;
+  gap: 10px;
+}
+
+.item:nth-child(3){
+  grid-column: span 2;
+}
+
+/* 
+ 로우 4개(할수는 있지만 되도록 가장 작은 아이템에 맞춰 셀을 구성하는게 좋다) => div로 c2 클래스 안만들어도됨
+.container{
+  background-color: #5d5d5d;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 2fr 2fr 1fr 1fr;
+}
+ 3번 클래스에 넣기 
+.my-grid-col-span2{
+  grid-column: span 2;
+}
+ 4번 클래스에 넣기
+.my-grid-row-span2{
+  grid-row: span 2;
+} 
+*/
+
+/* 
+ 로우 6개
+.container{
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  background-color: #5d5d5d;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(6,1fr);
+  gap: 10px;
+}
+
+.item{
+  background-color: cornflowerblue;
+  border: 1px solid #000;
+}
+
+ 3번 클래스에 넣기 
+.my-grid-col-span2{
+  grid-column: span 2;
+}
+ 1,2,3,4번 클래스에 넣기
+.my-grid-row-span2{
+  grid-row: span 2;
+}
+*/
